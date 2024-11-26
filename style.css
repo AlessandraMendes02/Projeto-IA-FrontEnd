@@ -1,0 +1,115 @@
+body {
+    background-color: #643b7a; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    min-height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2, p {
+    margin: 0 0 15px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 7%;
+}
+
+#uploadForm {
+    display: flex;
+    flex-direction: column; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 1rem; 
+    flex-wrap: wrap;
+}
+
+.btn-custom-1 {
+    background-color: #cacaca;
+    border: none;
+    color: black;
+    width: 120px; 
+    padding: 8px 16px; 
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 auto; 
+}
+
+.btn-custom-2 {
+    background-color: #bb6fca;
+    border: none;
+    color: black;
+    width: 120px; 
+    padding: 8px 16px; 
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 auto; 
+}
+
+.btn-custom-1:hover {
+    background-color: #737373;
+    color: white;
+}
+.btn-custom-2:hover {
+    background-color: #4a165a;
+    color: white;
+}
+
+.containerImg {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 0; 
+    text-align: center;
+    cursor: pointer;
+    color: #888;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; 
+}
+
+.containerImg img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    border-radius: 5px; 
+}
+
+
+.containerImg:hover {
+    border-color: #aaa;
+}
+
+#textoBemVindo {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+form{
+    margin-bottom: 70px;
+}

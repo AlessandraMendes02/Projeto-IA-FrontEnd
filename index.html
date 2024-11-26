@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IA</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 text-left" id="textoBemVindo">
+            <h2>Olá, Bem vindo!!</h2>
+            <p>Aqui você pode fazer o upload de uma imagem e, com apenas um clique em "Enviar", verá a descrição dela de forma simples.</p>
+        </div>
+        <div class="col-lg-6 col-md-12" id="containerInput">
+            <form id="uploadForm">
+                <div class="inserirImg">
+                    <h5>Inserir Imagem</h5>
+                    <div class="containerImg" id="containerImg">
+                        <p>Clique aqui para procurar a imagem em seu dispositivo que deseja submeter</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="clean" class="btn btn-custom-1">Limpar</button>
+                    <button type="submit" class="btn btn-custom-2">Enviar</button>
+                </div>
+                <div class="descricao mt-3" id="containerDescricao">
+                    <h5>Descrição</h5>
+                    <textarea class="form-control" id="descricao" rows="3" disabled></textarea>
+                </div>
+            </form>
+            <div id="imagePreviewContainer" style="display:none;">
+                <h5>Imagem Enviada:</h5>
+                <img id="imagePreview" src="" alt="Imagem enviada" style="max-width: 100%; height: auto;"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
